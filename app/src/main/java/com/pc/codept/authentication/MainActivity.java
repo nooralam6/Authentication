@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
-    private static Button btn;
+    private static Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         openRegister();
     }
     public void openLogin(){
-        btn=(Button)findViewById(R.id.login);
-        btn.setOnClickListener(new View.OnClickListener() {
+        button=(Button)findViewById(R.id.login);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent("com.pc.codept.authentication.Login");
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openRegister(){
-        btn=(Button)findViewById(R.id.button2);
-        btn.setOnClickListener(new View.OnClickListener() {
+        button=(Button)findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent("com.pc.codept.authentication.Register");
